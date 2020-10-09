@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>labtest1 question 1</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    const mixedArray = [
+        "BMW",
+        10,
+        true,
+        25,
+        false, 'Wings'
+        ];
+
+      function lowerCaseWords(lower) {
+
+        //const lowercaseit = result.map(lowerit => lowerit.toLowerCase());
+
+        let promise = new Promise(function(resolve, reject) {
+          if (lower.toLowerCase()) {
+            const result =  lower.filter(id => id.typeof === 'string')
+            console.log(result);
+
+          } else {
+            var error = new Error('Error, could not complete request');
+            reject(error);
+            console.log(error);
+          }
+
+        });
+      }
+
+
+
+
+
+    </script>
+  </body>
+</html>

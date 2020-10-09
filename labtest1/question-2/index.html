@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>question 2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+
+      let resolvedPromise = new Promise((resolve, reject) => {
+        let success = setTimeout(() => {
+        resolve('delayed success!');
+      }, 500)
+    })
+
+    let rejectedPromise = new Promise((resolve, reject) => {
+       let error = setTimeout(() => {
+         try {
+           throw new Error('error: delayed exception!');
+         } catch (e) {
+           console.error(e);
+         }
+    }, 500)
+  })
+
+console.log(resolvedPromise);
+
+
+
+
+
+
+</script>
+  </body>
+</html>
